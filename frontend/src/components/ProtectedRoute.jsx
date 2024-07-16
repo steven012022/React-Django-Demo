@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 function ProtectedRoute({ children }) {
   const [isAuthorized, setIsAuthorized] = useState(null);
 
+  // Upon the initial rendering of the component, execute the auth() function for identity verification. If the authentication fails (i.e., the Promise returned by auth() is rejected), set the isAuthorized state to false.
   useEffect(() => {
     auth().catch(() => setIsAuthorized(false));
   }, []);
