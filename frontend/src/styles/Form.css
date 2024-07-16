@@ -1,12 +1,7 @@
-/* Global settings to ensure the form is centered */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: "Arial", sans-serif;
   margin: 0;
-  background-color: #f0f2f5; /* Background color */
-  font-family: "Arial", sans-serif; /* Global font */
 }
 
 .form-container {
@@ -14,60 +9,61 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px; /* Add padding to make the form more balanced */
-  border-radius: 10px; /* Adjust border radius to make it more rectangular */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
-  background-color: #ffffff; /* Form background color */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   max-width: 400px;
-  width: 100%; /* Ensure it occupies the full width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  transition: transform 0.2s ease-in-out; /* Smooth transition effect */
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .form-container:hover {
-  transform: translateY(-5px); /* Hover effect */
+  transform: translateY(-5px);
 }
 
 .form-container h1 {
   margin-bottom: 20px;
-  color: #333; /* Title color */
-  font-size: 24px; /* Adjust title font size */
+  color: #333; 
+  font-size: 24px;
   font-weight: bold;
 }
 
 .form-input {
   width: 100%;
-  padding: 12px; /* Add padding to make input fields larger */
+  padding: 12px;
   margin: 10px 0;
   border: 1px solid #ccc;
-  border-radius: 6px; /* Adjust border radius */
+  border-radius: 6px;
   box-sizing: border-box;
-  transition: border-color 0.2s ease-in-out; /* Smooth transition effect */
+  transition: border-color 0.2s ease-in-out;
 }
 
 .form-input:focus {
-  border-color: #007bff; /* Border color when focused */
-  outline: none; /* Remove default focus outline */
+  border-color: #007bff;
+  outline: none;
 }
 
 .form-button {
   width: 100%;
-  padding: 12px; /* Add padding to make the button larger */
+  padding: 12px;
   margin: 20px 0;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 6px; /* Adjust border radius */
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition effects */
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .form-button:hover {
   background-color: #0056b3;
-  transform: translateY(-3px); /* Hover effect */
+  transform: translateY(-3px);
 }
 
-/* Loading indicator style */
 .loading-indicator {
   margin-top: 10px;
 }
